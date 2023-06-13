@@ -22,6 +22,11 @@ public class LoggingController {
         return ResponseEntity.ok(loggingQueryService.getAll());
     }
 
+    @GetMapping("/lever")
+    private ResponseEntity<List<Logging>> getLoggingByLever(@RequestParam String lever) {
+        return ResponseEntity.ok(loggingQueryService.findByLever(lever));
+    }
+
     @PostMapping("")
     private ResponseEntity insertLog(@RequestBody Logging logging) {
         loggingCommandService.insertLog(logging);

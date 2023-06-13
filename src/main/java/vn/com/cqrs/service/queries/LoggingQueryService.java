@@ -6,4 +6,7 @@ import java.util.List;
 
 public interface LoggingQueryService {
     List<Logging> getAll();
+
+    List<Logging> findByLever(String lever);
+
 }
