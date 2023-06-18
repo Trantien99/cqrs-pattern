@@ -1,13 +1,13 @@
 package vn.com.cqrs.repository;
 
 import org.springframework.stereotype.Repository;
-import vn.com.cqrs.models.Logging;
+import vn.com.cqrs.models.PendingTask;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class LoggingQueryRepository {
+public class PendingTaskQueryRepository {
 
-    public final List<Logging> loggingQuery = new ArrayList<>();
+    public final List<PendingTask> pendingTasks = new ArrayList<>();
 }
